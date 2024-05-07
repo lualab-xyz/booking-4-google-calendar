@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-day-selection',
@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './day-selection.component.scss'
 })
 export class DaySelectionComponent {
+  @Output() daySelected = new EventEmitter<string>();
 
+  selectDay(day: string) {
+    this.daySelected.emit(day);
+  }
 }
