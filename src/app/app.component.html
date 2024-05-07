@@ -1,2 +1,5 @@
 <h1>Ma Vie Romantique</h1>
-<app-day-selection />
+<div>
+    <app-day-selection (daySelected)="onDaySelected($event)"></app-day-selection>
+    <app-calendar *ngIf="daySelected"></app-calendar>
+</div>
