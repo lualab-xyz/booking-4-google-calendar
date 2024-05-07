@@ -11,10 +11,9 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'booking-app';
+  daySelected: string = '';
 
-  // Método que se llama cuando se emite el evento daySelected
   onDaySelected(day: string) {
-    console.log(day); // Aquí puedes manejar el día seleccionado
+    this.daySelected = day;
   }
 }
