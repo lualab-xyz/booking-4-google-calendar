@@ -1,0 +1,16 @@
+@import '/src/variables.scss';
+
+.day_selection_component {
+    // Estilos para los componentes, si es necesario
+    border: 1px solid #ccc; // Ejemplo de borde
+    padding: 10px;
+
+  &__title {
+    // Estilos para el título
+    font-family: $primary-font;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+}
